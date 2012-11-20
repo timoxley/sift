@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../build/build.css" >
+    <style>
+      #result {
+        border: 1px solid #ddd;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../../build/build.js"></script>
+    <h4>Type a color name</h4>
+    <input type="text" id="color" >
+    <div id="result"></div>
+    <div id="suggest"></div>
+    <script>
+      var input = document.getElementById('color')
+      var result = document.getElementById('result')
+      var suggest = document.getElementById('suggest')
+      var colors = require('timoxley-colors')
+      var min = require('component-min')
+
+      var sift = require('sift')
+
+      var allColors = colors.all()
+
+      var debounce
+      input.addEventListener('keyup', function() {
+        clearTimeout(debounce)
+        debounce = setTimeout(function() {
+          checkName(input.value)
+        }, 300)
+      })
+
+      function checkName(name) {
+        var color = colors(name)
+        if (!color) {
+          printSuggestions(name)
+        } else {
+          result.style.backgroundColor = color
+          suggest.innerText = ''
+        }
+      }
+
+      function printSuggestions(name) {
+        var suggestion = getSuggestion(name)
+        result.style.backgroundColor = suggestion.value
+        suggest.innerText = "Did you mean " + suggestion.name + "?"
+      }
+
+      function getSuggestion(name) {
+        var scores = allColors.map(function(color) {
+          return { color: color, score: sift(name, color.name)}
+        })
+
+        var minScore = min(scores, 'score')
+        return scores.filter(function(score) {
+          return score.score === minScore
+        }).pop().color
+      }
+    </script>
+  </body>
+</html>
+
+

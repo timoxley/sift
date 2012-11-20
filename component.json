@@ -1,0 +1,16 @@
+{
+  "name": "sift",
+  "repo": "timoxley/sift",
+  "description": "Fast String Distance (SIFT) Algorithm",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {
+    "timoxley/colors": "*",
+    "component/min": "*"
+  },
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
