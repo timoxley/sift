@@ -6,6 +6,10 @@
 
     $ component install timoxley/sift
 
+## Demo
+
+[Demo](http://timoxley.github.com/sift/examples/spellcheck/)
+
 ## API
 
 ### sift(string, string)
