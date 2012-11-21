@@ -14,11 +14,11 @@
 
 ### sift(string, string)
 
-  Return 'distance' between two strings.
+Return 'distance' between two strings.
 
 ## Credit
 
-  Code extracted from [MailCheck](https://github.com/kicksend/mailcheck)
+Code extracted from [MailCheck](https://github.com/kicksend/mailcheck)
 
 ## License
 
