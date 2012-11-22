@@ -1,6 +1,7 @@
 {
   "name": "sift",
   "repo": "timoxley/sift",
+  "twitter": "secoif",
   "description": "Fast String Distance (SIFT) Algorithm",
   "version": "0.0.1",
   "keywords": [],
