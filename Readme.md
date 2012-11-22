@@ -1,3 +1,5 @@
+[![Find more components.](http://165.225.129.128:5050/component.png)](https://github.com/component/component/wiki/Components)
+
 # sift
 
   Fast String Distance (SIFT) Algorithm.
