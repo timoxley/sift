@@ -1,4 +1,4 @@
-[![Find more components.](http://165.225.129.128:5050/component.png)](https://github.com/component/component/wiki/Components)
+[![Find more components.](http://165.225.129.128:5050/component.png?2)](https://github.com/component/component/wiki/Components)
 
 # sift
 
@@ -17,6 +17,10 @@
 ### sift(string, string)
 
 Return 'distance' between two strings.
+
+## TODO
+
+* Dictionary Helper supply it emits suggestions.
 
 ## Credit
 
