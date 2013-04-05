@@ -1,5 +1,5 @@
 {
-  "name": "sift",
+  "name": "sift-string",
   "version": "0.0.1",
   "description": "Fast String Distance (SIFT) Algorithm",
   "main": "index.js",
