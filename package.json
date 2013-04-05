@@ -1,0 +1,23 @@
+{
+  "name": "sift",
+  "version": "0.0.1",
+  "description": "Fast String Distance (SIFT) Algorithm",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "open http://timoxley.github.com/sift/examples/spellcheck/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timoxley/sift.git"
+  },
+  "keywords": [
+    "string"
+  ],
+  "author": "MailCheck",
+  "license": "MIT",
+  "readmeFilename": "Readme.md",
+  "gitHead": "a8c277d4636e222a30600d872f3632b506d13874"
+}
