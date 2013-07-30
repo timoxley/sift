@@ -1,9 +1,10 @@
-[![NPM](https://nodei.co/npm/sift-string.png)](https://nodei.co/npm/sift-string/)
-[![Dependency Status](https://david-dm.org/timoxley/sift.png)](https://david-dm.org/timoxley/sift)
-
 # sift
 
   Fast String Distance (SIFT) Algorithm.
+
+[![NPM](https://nodei.co/npm/sift-string.png)](https://nodei.co/npm/sift-string/)
+
+[![Dependency Status](https://david-dm.org/timoxley/sift.png)](https://david-dm.org/timoxley/sift)
 
 ## Installation
 
