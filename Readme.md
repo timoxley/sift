@@ -1,10 +1,18 @@
-[![Find more components.](http://165.225.129.128:5050/component.png?2)](https://github.com/component/component/wiki/Components)
+[![NPM](https://nodei.co/npm/sift-string.png)](https://nodei.co/npm/sift-string/)
+[![Dependency Status](https://david-dm.org/timoxley/sift.png)](https://david-dm.org/timoxley/sift)
 
 # sift
 
   Fast String Distance (SIFT) Algorithm.
 
 ## Installation
+
+#### Browserify/Node
+
+    $ npm install sift-string
+
+
+#### Component
 
     $ component install timoxley/sift
 
