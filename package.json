@@ -7,7 +7,8 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "open http://timoxley.github.com/sift/examples/spellcheck/",
+    "test": "mocha --ui bdd",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- -u exports -R spec",
     "c-build": "component build --dev",
     "c-install": "component install --dev",
     "c-clean": "rm -fr build components template.js",
@@ -15,6 +16,9 @@
     "c-demo": "npm run c-install && npm run c-build && npm run c-open"
   },
   "devDependencies": {
+    "mocha": "1.15.x",
+    "istanbul": "0.1.46",
+    "should": "2.1.x",
     "opener": "1.3.x"
   },
   "repository": {
@@ -22,7 +26,7 @@
     "url": "git://github.com/timoxley/sift.git"
   },
   "keywords": [
-    "string"
+    "string", "string distance", "sift", "sift3"
   ],
   "author": "MailCheck",
   "license": "MIT",
