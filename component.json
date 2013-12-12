@@ -7,7 +7,7 @@
   "keywords": [],
   "dependencies": {},
   "development": {
-    "timoxley/colors": "*",
+    "timoxley/colornames": "*",
     "component/min": "*"
   },
   "license": "MIT",

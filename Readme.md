@@ -21,6 +21,15 @@
 
 [Demo](http://timoxley.github.com/sift/examples/spellcheck/)
 
+or if you want to check it out locally:
+
+```bash
+# run only once to install npm dev dependencies
+npm install .
+# this will install && build the components and open the demo web page
+npm run c-demo
+```
+
 ## API
 
 ### sift(string, string)
