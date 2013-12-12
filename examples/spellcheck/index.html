@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../../build/build.css" >
     <style>
+      body {
+        padding: 75px;
+        font: 14px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #272727;
+      }
       #result {
-        border: 1px solid #ddd;
-        height: 50px;
-        width: 50px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        border-radius: 80px;
+        top: 88px;
+        left: 200px;
+      }
+      #container {
+        min-height: 250px;
+        padding: 25px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px #333;
+        position: relative;
+      }
+      #color {
+        padding: 0;
+        margin-left: 2px;
+        line-height: 20px;
+        width: 155px;
+        text-indent: 2px;
+        color: #555;
+        font-size: 20px;
+      }
+      #suggest {
+        font-style: italic;
+        font-weight: bold;
+        color: #999;
+        text-indent: 4px;
+      }
+      #footer {
+        bottom: 10px;
+        position: absolute;
       }
     </style>
   </head>
   <body>
+    <div id="container">
+      <h1>Type a color name</h1>
+
+      <input type="text" id="color" >
+      <div id="result"></div>
+      <div id="suggest"></div>
+
+      <div id="footer">
+        <a href="https://github.com/timoxley/sift">View on GitHub</a>
+      </div>
+    </div>
+
     <script src="../../build/build.js"></script>
-    <h4>Type a color name</h4>
-    <input type="text" id="color" >
-    <div id="result"></div>
-    <div id="suggest"></div>
-    <a href="https://github.com/timoxley/sift">View on GitHub</a>
     <script>
       var input = document.getElementById('color')
       var result = document.getElementById('result')
       var suggest = document.getElementById('suggest')
-      var colors = require('timoxley-colors')
+      var colors = require('timoxley-colornames')
       var min = require('component-min')
 
       var sift = require('sift')
@@ -42,14 +82,14 @@
           printSuggestions(name)
         } else {
           result.style.backgroundColor = color
-          suggest.innerText = ''
+          suggest.innerHTML = ''
         }
       }
 
       function printSuggestions(name) {
         var suggestion = getSuggestion(name)
         result.style.backgroundColor = suggestion.value
-        suggest.innerText = "Did you mean " + suggestion.name + "?"
+        suggest.innerHTML = "Did you mean " + suggestion.name + "?"
       }
 
       function getSuggestion(name) {

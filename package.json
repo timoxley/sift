@@ -7,7 +7,15 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "open http://timoxley.github.com/sift/examples/spellcheck/"
+    "test": "open http://timoxley.github.com/sift/examples/spellcheck/",
+    "c-build": "component build --dev",
+    "c-install": "component install --dev",
+    "c-clean": "rm -fr build components template.js",
+    "c-open": "opener ./examples/spellcheck/index.html",
+    "c-demo": "npm run c-install && npm run c-build && npm run c-open"
+  },
+  "devDependencies": {
+    "opener": "1.3.x"
   },
   "repository": {
     "type": "git",
