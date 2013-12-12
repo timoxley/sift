@@ -1,0 +1,52 @@
+[
+  {
+    "attempt": "app",
+    "original": "apples",
+    "score": 1.5 
+  },
+  {
+    "attempt": "jeff",
+    "original": "jeffrey",
+    "score": 1.5
+  },
+  {
+    "attempt": "pragram",
+    "original": "program",
+    "score": 2
+  },
+  {
+    "attempt": "program",
+    "original": "programming",
+    "score": 2
+  },
+  {
+    "attempt": "starlight",
+    "original": "light",
+    "score": 3
+  },
+  {
+    "attempt": "light",
+    "original": "starlight",
+    "score": 3
+  },
+  {
+    "attempt": "match",
+    "original": "matching",
+    "score": 1.5
+  },
+  {
+    "attempt": "pine",
+    "original": "pineapple",
+    "score": 2.5
+  },
+  {
+    "attempt": "pineple",
+    "original": "pineapple",
+    "score": 3
+  },
+  {
+    "attempt": "pineappl",
+    "original": "pineapple",
+    "score": 0.5
+  }
+]
