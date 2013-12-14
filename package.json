@@ -1,6 +1,6 @@
 {
   "name": "sift-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fast String Distance (SIFT) Algorithm",
   "main": "index.js",
   "directories": {

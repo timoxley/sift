@@ -3,8 +3,8 @@
   "repo": "timoxley/sift",
   "twitter": "secoif",
   "description": "Fast String Distance (SIFT) Algorithm",
-  "version": "0.0.1",
-  "keywords": [],
+  "version": "0.0.2",
+  "keywords": ["string distance", "sift", "sift3"],
   "dependencies": {},
   "development": {
     "timoxley/colornames": "*",
