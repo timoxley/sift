@@ -44,6 +44,8 @@ Return 'distance' between two strings.
 
 Code extracted from [MailCheck](https://github.com/kicksend/mailcheck)
 
+Big thanks to [Alexandru Vladutu](https://github.com/alessioalex) for his contributions!
+
 ## License
 
   MIT
