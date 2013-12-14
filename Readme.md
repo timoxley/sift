@@ -1,9 +1,9 @@
 # sift
 
-  Fast String Distance (SIFT) Algorithm.
+Fast String Distance (SIFT) Algorithm.
 
 [![NPM](https://nodei.co/npm/sift-string.png)](https://nodei.co/npm/sift-string/)
-
+[![Build Status](https://travis-ci.org/timoxley/sift.png?branch=master)](https://travis-ci.org/timoxley/sift)
 [![Dependency Status](https://david-dm.org/timoxley/sift.png)](https://david-dm.org/timoxley/sift)
 
 ## Installation
